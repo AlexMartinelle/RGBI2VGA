@@ -6,5 +6,5 @@ This ESP32 project, for the arduino development environment, converts the Europe
 It is in no way complete, but seems to work fine for running the default 80-column graphics/text-mode and GEOS 128.
 
 The input signal sampling is performed via parallel I2S at 32MHz on core 1
-and the VGA ouput is handled by running FabGL http://www.fabglib.org/ on core 0.
+and the VGA ouput is handled by running FabGL http://www.fabglib.org/ , https://github.com/fdivitto/FabGL on core 0.
 
