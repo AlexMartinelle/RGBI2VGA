@@ -8,3 +8,8 @@ It is in no way complete, but seems to work fine for running the default 80-colu
 The input signal sampling is performed via parallel I2S at 32MHz on core 1
 and the VGA ouput is handled by running FabGL http://www.fabglib.org/ , https://github.com/fdivitto/FabGL on core 0.
 
+Remember to switch the core for FabGLs (In fabglconf.h: Set the "#define FABGLIB_VIDEO_CPUINTENSIVE_TASKS_CORE 0" instead of WIFI_TASK_CORE_ID)
+
+Don't trust the schematic, double check that all the pins on your ESP32 match what's in the code and that the connection makes sense.
+It's version 0.1..
+https://github.com/AlexMartinelle/RGBI2VGA/blob/main/RGBI2VGAESP32Schemagic.png
